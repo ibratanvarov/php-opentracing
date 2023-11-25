@@ -1,0 +1,31 @@
+{
+    "name": "alifuz/php-opentracing-sdk",
+    "type": "library",
+    "minimum-stability": "stable",
+    "require": {
+        "php": "^8.0 | ^8.1 | ^8.2",
+        "illuminate/contracts": "^8.0|^9.0",
+        "illuminate/support": "^8.0|^9.0|^10.30.0",
+        "jonahgeorge/jaeger-client-php": "^1.4",
+        "opentracing/opentracing": "^1.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.0|^7.0",
+        "phpunit/phpunit": "^9.3.3",
+        "friendsofphp/php-cs-fixer": "^3.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Alifuz\\Opentracing\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Alifuz\\Opentracing\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "cs-check" :  ["./vendor/bin/php-cs-fixer fix -vvv --dry-run --show-progress=dots --config=.php-cs-fixer.php --allow-risky=yes"],
+        "cs-fix" : ["./vendor/bin/php-cs-fixer fix -vvv --show-progress=dots --config=.php-cs-fixer.php --allow-risky=yes"]
+    }
+}
