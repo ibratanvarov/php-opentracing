@@ -1,5 +1,5 @@
 {
-    "name": "alifuz/php-opentracing-sdk",
+    "name": "ibrat/php-opentracing-sdk",
     "type": "library",
     "minimum-stability": "stable",
     "require": {
